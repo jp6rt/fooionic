@@ -1,5 +1,7 @@
 {
   "name": "fooionic",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
