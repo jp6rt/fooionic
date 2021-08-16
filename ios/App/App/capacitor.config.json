@@ -1,0 +1,6 @@
+{
+	"appId": "com.arcanys.fooionic",
+	"appName": "fooionic",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
