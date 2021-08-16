@@ -19,7 +19,7 @@ cd ../..
 
 echo "-------------------Debugging current directory"
 pwd
-
+ls
 
 # install dependencies
 npm install -g @ionic/cli
