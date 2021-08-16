@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # fail if any command fails
-set -e
+# set -e
 # debug log
 set -x
 
@@ -17,11 +17,13 @@ nvm alias node14 "$NODE_VERSION"
 # go to root of project
 cd ../..
 
+echo "-------------------Debugging current directory"
+pwd
+
+
 # install dependencies
+npm install -g @ionic/cli
 npm i
 
-# run optimized production build
-npm run build -- --prod
-
 # copy the web assets to the native projects and updates the native plugins and dependencies based in package.json
-npx ionic capacitor build android
+ionic capacitor build android
